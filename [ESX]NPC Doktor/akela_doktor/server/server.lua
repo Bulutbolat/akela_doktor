@@ -19,7 +19,7 @@ end)
 function dclog(xPlayer, text)
     local playerName = Sanitize(xPlayer.getName())
   
-    local discord_webhook = "https://discord.com/api/webhooks/988794341688508426/gwe9xPoMijh5q7ChWdtlJmdWPdZBB524lxtdF2EgALTRotbgQ1TB5Y6qh8Ra_knFzu0k"
+    local discord_webhook = "WEBHOOK"
     if discord_webhook == '' then
       return
     end
@@ -27,8 +27,8 @@ function dclog(xPlayer, text)
       ['Content-Type'] = 'application/json'
     }
     local data = {
-      ["username"] = "Moon Logger - Npc Doktor Log",
-      ["avatar_url"] = "https://i.hizliresim.com/9jnonmu.png",
+      ["username"] = "Akela - Npc Doktor Log",
+      ["avatar_url"] = "https://i.hizliresim.com/nwqs7qn.gif",
       ["embeds"] = {{
         ["author"] = {
           ["name"] = playerName .. ' - ' .. xPlayer.identifier
